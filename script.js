@@ -106,11 +106,11 @@ const scheduleData = {
     },
     {
       "time": "14:40",
-      "week": "all", // Specify which weeks this lesson applies to (all, upper, or lower)
+      "week": "all", 
       "course": "Мова",
       "title": "Англійська мова за професійним спрямуванням",
       "teacher": "Цепко Т.А.",
-      "location": "435 аудиторія"
+      "location": "435 аудиторія",
       "additionalInfo": "https://zoom.us/j/5169999552?pwd=UENVOXlJYm9hcWRQTDFnd3ZMemgzdz09"
     },
     {
