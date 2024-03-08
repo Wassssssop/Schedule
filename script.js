@@ -7,34 +7,34 @@ const scheduleData = {
       "title": "",
       "teacher": "",
       "location": "",
-      "additionalInfo": "Some additional information for Monday"
+      "additionalInfo": ""
     },
     {
       "time": "14:40",
       "week": "all", // Specify which weeks this lesson applies to (all, upper, or lower)
-      "course": "Лекція",
-      "title": "Новітня Історія України",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "Онлайн",
-      "additionalInfo": "https://meet.google.com/yao-yrwr-heg"
+      "course": "",
+      "title": "",
+      "teacher": "",
+      "location": "",
+      "additionalInfo": ""
     },
     {
       "time": "16:20",
       "week": "all", // Specify which weeks this lesson applies to (all, upper, or lower)
-      "course": "Лекція",
-      "title": "Історія політики країн Заходу щодо України",
-      "teacher": "Машевський О.П.",
-      "location": "Онлайн",
-      "additionalInfo": "https://knu-ua.zoom.us/j/88035974768?pwd=NWxnZll2YkxiWkowaTZ3Y0lqVTZhdz09"
+      "course": "",
+      "title": "",
+      "teacher": "",
+      "location": "",
+      "additionalInfo": ""
     },
     {
       "time": "17:55",
       "week": "all", // Specify which weeks this lesson applies to (all, upper, or lower)
-      "course": "Лекція",
-      "title": "Історія раннього Нового часу",
-      "teacher": "Пількевич А. Л.",
-      "location": "Онлайн",
-      "additionalInfo": "https://us02web.zoom.us/j/71399386454?pwd=RitDZGxhUVpWcHFpRkVUMU9ER0J3QT09"
+      "course": "",
+      "title": "",
+      "teacher": "",
+      "location": "",
+      "additionalInfo": ""
     },
     // Other lesson objects for different time slots and weeks
   ],
@@ -46,33 +46,50 @@ const scheduleData = {
       "title": "",
       "teacher": "",
       "location": "",
-      "additionalInfo": "Some additional information for Monday"
+      "additionalInfo": ""
     },
     {
       "time": "14:40",
       "week": "all", // Specify which weeks this lesson applies to (all, upper, or lower)
-      "course": "Мова",
-      "title": "Англійська / Французька / Німецька / Іспанська",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "153 / 456 / Онлайн / 452 ауд.",
+      "course": "Лекція",
+      "title": "Міжкультурна комунікація та етикет міжнародної ввічливості в практиці діаспори",
+      "teacher": "Набока С.В.",
+      "location": "435 аудиторія",
       "additionalInfo": ""
     },
     {
       "time": "16:20",
-      "week": "all", // Specify which weeks this lesson applies to (all, upper, or lower)
-      "course": "Среміна",
-      "title": "Історія раннього Нового часу",
-      "teacher": "Грегуль А. Ю",
-      "location": "453 аудиторія",
+      "week": "upper", // Specify which weeks this lesson applies to (all, upper, or lower)
+      "course": "Лекція",
+      "title": "Новітня історія України",
+      "teacher": "Вербовий О.В.",
+      "location": "435 аудиторія",
+      "additionalInfo": ""
+    },    {
+      "time": "16:20",
+      "week": "lower", // Specify which weeks this lesson applies to (all, upper, or lower)
+      "course": "Семінар",
+      "title": "Новітня історія України",
+      "teacher": "Шкабко С. І.",
+      "location": "435 аудиторія",
       "additionalInfo": ""
     },
     {
       "time": "17:55",
-      "week": "all", // Specify which weeks this lesson applies to (all, upper, or lower)
+      "week": "upper", // Specify which weeks this lesson applies to (all, upper, or lower)
       "course": "Семінар",
-      "title": "Історія Східної Європи та Росії",
-      "teacher": "Гуменний С. Л.",
-      "location": "438 аудиторія",
+      "title": "Міжкультурна комунікація та етикет міжнародної ввічливості в практиці діаспори",
+      "teacher": "Набока С.В.",
+      "location": "435 аудиторія",
+      "additionalInfo": ""
+    },    
+    {
+      "time": "17:55",
+      "week": "lower", // Specify which weeks this lesson applies to (all, upper, or lower)
+      "course": "Семінар",
+      "title": "Нова історія  країн Західної Європи та Північної Америки (з 15.02 по 21.05)",
+      "teacher": "Кошелєв А.О.",
+      "location": "435 аудиторія",
       "additionalInfo": ""
     },
     // Other lesson objects for different time slots and weeks
@@ -90,28 +107,37 @@ const scheduleData = {
     {
       "time": "14:40",
       "week": "all", // Specify which weeks this lesson applies to (all, upper, or lower)
-      "course": "Лекція",
-      "title": "Історія Східної Європи та Росії",
-      "teacher": "Мордвінцев В. М.",
-      "location": "Онлайн; 10:00",
+      "course": "Мова",
+      "title": "Англійська мова за професійним спрямуванням",
+      "teacher": "Цепко Т.А.",
+      "location": "435 аудиторія"
       "additionalInfo": "https://zoom.us/j/5169999552?pwd=UENVOXlJYm9hcWRQTDFnd3ZMemgzdz09"
     },
     {
       "time": "16:20",
       "week": "all", // Specify which weeks this lesson applies to (all, upper, or lower)
-      "course": "Семінар",
-      "title": "Історія політичного устрою країн Західної Європи ",
-      "teacher": "Іванов О. Ф.",
-      "location": "451 аудиторія",
+      "course": "Мова",
+      "title": "Англійська мова за професійним спрямуванням",
+      "teacher": "Цепко Т.А.",
+      "location": "159 аудиторія",
       "additionalInfo": ""
     },
     {
       "time": "17:55",
-      "week": "all", // Specify which weeks this lesson applies to (all, upper, or lower)
-      "course": "Мова",
-      "title": "Англійська / Французька / Німецька / Іспанська",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "153 / 456 / Онлайн / 452 ауд.",
+      "week": "upper", // Specify which weeks this lesson applies to (all, upper, or lower)
+      "course": "Лекція",
+      "title": "Нова історія країн Азії та Африки",
+      "teacher": "Сухобокова О.О.",
+      "location": "450 ауидторія",
+      "additionalInfo": ""
+    },
+      {
+      "time": "17:55",
+      "week": "lower", // Specify which weeks this lesson applies to (all, upper, or lower)
+      "course": "Семінар",
+      "title": "Нова історія країн Азії та Африки",
+      "teacher": "Сухобокова О.О.",
+      "location": "450 аудиторія.",
       "additionalInfo": ""
     },
     // Other lesson objects for different time slots and weeks
@@ -119,74 +145,65 @@ const scheduleData = {
   "thursday": [
     {
       "time": "13:05",
+      "week": "all",
+      "course": "",
+      "title": "",
+      "teacher": "",
+      "location": "",
+      "additionalInfo": ""
+    },    
+    {
+      "time": "14:40",
       "week": "lower",
       "course": "Лекція",
-      "title": "Історія політичного устрою країн Західної Європи ",
-      "teacher": "Іванов О. Ф.",
-      "location": "451 аудиторія",
+      "title": "Українська діаспора та збереження української традиційної спадщини",
+      "teacher": "вакансія",
+      "location": "150 аудиторія",
       "additionalInfo": ""
     },
     {
       "time": "14:40",
       "week": "lower",
-      "course": "",
-      "title": "",
-      "teacher": "",
-      "location": "",
-      "additionalInfo": ""
-    },
-    {
-      "time": "16:20",
-      "week": "lower",
-      "course": "",
-      "title": "",
-      "teacher": "",
-      "location": "",
-      "additionalInfo": ""
-    },
-    {
-      "time": "17:55",
-      "week": "lower",
-      "course": "Мова",
-      "title": "Англійська / Французька / Німецька / Іспанська",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "153 / 456 / Онлайн / 452 ауд.",
-      "additionalInfo": ""
-    },
-    {
-      "time": "13:05",
-      "week": "upper",
-      "course": "",
-      "title": "",
-      "teacher": "",
-      "location": "",
-      "additionalInfo": ""
-    },
-    {
-      "time": "14:40",
-      "week": "upper",
       "course": "Семінар",
-      "title": "Історія політики країн Заходу щодо України",
+      "title": "Українська діаспора та збереження української традиційної спадщини",
+      "teacher": "вакансія",
+      "location": "150 аудиторія",
+      "additionalInfo": ""
+    },
+    {
+      "time": "14:40",
+      "week": "lower",
+      "course": "Лекція",
+      "title": " Україна в контексті світової історії",
+      "teacher": "Орлова Т.В.",
+      "location": "425 аудиторія",
+      "additionalInfo": ""
+    },
+      {
+      "time": "14:40",
+      "week": "lower",
+      "course": "Семінар",
+      "title": " Україна в контексті світової історії",
+      "teacher": "Орлова Т.В.",
+      "location": "425 аудиторія",
+      "additionalInfo": ""
+    },
+      {
+      "time": "14:40",
+      "week": "lower",
+      "course": "Лекція",
+      "title": "Нова історія  країн Західної Європи та Північної Америки",
       "teacher": "Машевський О.П.",
-      "location": "460 аудиторія",
+      "location": "150 аудиторія",
       "additionalInfo": ""
     },
-    {
-      "time": "16:20",
-      "week": "upper",
+      {
+      "time": "14:40",
+      "week": "lower",
       "course": "Семінар",
-      "title": "Новітня історія України",
-      "teacher": "Шкабко С. І.",
-      "location": "452 аудиторія",
-      "additionalInfo": ""
-    },
-    {
-      "time": "17:55",
-      "week": "upper",
-      "course": "Мова",
-      "title": "Англійська / Французька / Німецька / Іспанська",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "153 / 456 / Онлайн / 452 ауд.",
+      "title": "Нова історія  країн Західної Європи та Північної Америки",
+      "teacher": "Кошелєв А.О.",
+      "location": "150 аудиторія",
       "additionalInfo": ""
     },
     // Other lesson objects for different time slots and weeks
