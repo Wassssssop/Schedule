@@ -209,45 +209,6 @@ body {
   color: #fff;
 }
 
-.mode-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 180px; 
-}
-
-.mode-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 300px; 
-}
-
-.mode-buttons button {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.mode-buttons button.active {
-  background-color: #4CAF50; 
-  color: #fff;
-}
-
-.mode-buttons button:not(.active) {
-  background-color: #f0f4f8; 
-  color: #444;
-}
-
-.mode-buttons button:hover {
-  background-color: #45a049; 
-  color: #fff;
-}
-
-
 @media (max-width: 768px) {
 
  .schedule {
