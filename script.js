@@ -352,7 +352,6 @@ lowerWeekButton.addEventListener('click', () => {
   }
 });
 
-
 if (today !== 0) {
   const currentDayElement = days[today - 1];
   resetActiveDay();
