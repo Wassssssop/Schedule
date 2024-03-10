@@ -231,18 +231,19 @@ const days = document.querySelectorAll('.day');
 const scheduleContent = document.querySelectorAll('.schedule-content');
 const today = new Date().getDay();
 let currentDay = '';
-let currentWeek = 'upper'; // Set the default week to upper
+let currentWeek = 'upper';
+let isAlternativeMode = false;
 const lessonTimes = ["13:05", "14:40", "16:20", "17:55"];
 
 function displaySchedule(day) {
   scheduleContent.forEach(content => {
-    content.innerHTML = ''; // Clear existing schedule
+    content.innerHTML = '';
   });
   const dayData = scheduleData[day];
   if (dayData) {
     dayData.forEach(timeSlotData => {
-      if ((day !== 'sunday' && day !== 'saturday') && ((timeSlotData.week === 'all'  timeSlotData.week === currentWeek) && 
-          ((!isAlternativeMode && !timeSlotData.alternative)  (isAlternativeMode && timeSlotData.alternative)))) {
+      if ((day !== 'sunday' && day !== 'saturday') && ((timeSlotData.week === 'all' || timeSlotData.week === currentWeek) && 
+          ((!isAlternativeMode && !timeSlotData.alternative) || (isAlternativeMode && timeSlotData.alternative)))) {
         if (timeSlotData.course) {
           const classElement = document.createElement('div');
           classElement.classList.add('class');
@@ -290,7 +291,6 @@ days.forEach(day => {
   });
 });
 
-
 document.getElementById('upper-week').addEventListener('click', () => {
   currentWeek = 'upper';
   scheduleContent.forEach(content => content.innerHTML = '');
@@ -307,10 +307,50 @@ document.getElementById('lower-week').addEventListener('click', () => {
   document.getElementById('upper-week').classList.remove('active');
 });
 
+document.getElementById('normal-mode').addEventListener('click', () => {
+  if (isAlternativeMode) {
+    isAlternativeMode = false;
+    displaySchedule(currentDay);
+    document.getElementById('normal-mode').classList.add('active');
+    document.getElementById('alternative-mode').classList.remove('active');
+  }
+});
+
+document.getElementById('alternative-mode').addEventListener('click', () => {
+  if (!isAlternativeMode) {
+    isAlternativeMode = true;
+    displaySchedule(currentDay);
+    document.getElementById('alternative-mode').classList.add('active');
+    document.getElementById('normal-mode').classList.remove('active');
+  }
+});
 
 const resetActiveDay = () => {
   days.forEach(d => d.classList.remove('active'));
 };
+
+const upperWeekButton = document.getElementById('upper-week');
+const lowerWeekButton = document.getElementById('lower-week');
+
+upperWeekButton.addEventListener('click', () => {
+  if (currentWeek !== 'upper') {
+    currentWeek = 'upper';
+    scheduleContent.forEach(content => content.innerHTML = '');
+    displaySchedule(currentDay);
+    upperWeekButton.classList.add('active');
+    lowerWeekButton.classList.remove('active');
+  }
+});
+
+lowerWeekButton.addEventListener('click', () => {
+  if (currentWeek !== 'lower') {
+    currentWeek = 'lower';
+    scheduleContent.forEach(content => content.innerHTML = '');
+    displaySchedule(currentDay);
+    lowerWeekButton.classList.add('active');
+    upperWeekButton.classList.remove('active');
+  }
+});
 
 
 if (today !== 0) {
