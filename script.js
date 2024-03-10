@@ -238,16 +238,14 @@ function displaySchedule(day) {
   scheduleContent.forEach(content => {
     content.innerHTML = ''; // Clear existing schedule
   });
-
   const dayData = scheduleData[day];
-  if (dayData && today !== 0) {
+  if (dayData) {
     dayData.forEach(timeSlotData => {
-      if (timeSlotData.week === 'all' || timeSlotData.week === currentWeek) {
-        const lessonIndex = lessonTimes.indexOf(timeSlotData.time);
-        if (lessonIndex !== -1 && timeSlotData.course) {
+      if ((day !== 'sunday' && day !== 'saturday') && ((timeSlotData.week === 'all'  timeSlotData.week === currentWeek) && 
+          ((!isAlternativeMode && !timeSlotData.alternative)  (isAlternativeMode && timeSlotData.alternative)))) {
+        if (timeSlotData.course) {
           const classElement = document.createElement('div');
           classElement.classList.add('class');
-          classElement.style.float = 'left';
           const courseTitle = document.createElement('strong');
           courseTitle.textContent = timeSlotData.course;
           classElement.appendChild(courseTitle);
@@ -272,14 +270,17 @@ function displaySchedule(day) {
             additionalInfo.textContent = timeSlotData.additionalInfo;
           }
           classElement.appendChild(additionalInfo);
-          scheduleContent[lessonIndex].appendChild(classElement);
+          scheduleContent.forEach((content, index) => {
+            if (lessonTimes[index] === timeSlotData.time) {
+              content.appendChild(classElement);
+            }
+          });
         }
       }
     });
   }
 }
 
-// Add event listeners for day selection
 days.forEach(day => {
   day.addEventListener('click', () => {
     days.forEach(d => d.classList.remove('active'));
@@ -289,7 +290,7 @@ days.forEach(day => {
   });
 });
 
-// Add event listeners for week selection
+
 document.getElementById('upper-week').addEventListener('click', () => {
   currentWeek = 'upper';
   scheduleContent.forEach(content => content.innerHTML = '');
@@ -306,12 +307,12 @@ document.getElementById('lower-week').addEventListener('click', () => {
   document.getElementById('upper-week').classList.remove('active');
 });
 
-// Function to reset active day
+
 const resetActiveDay = () => {
   days.forEach(d => d.classList.remove('active'));
 };
 
-// Initialize schedule for today
+
 if (today !== 0) {
   const currentDayElement = days[today - 1];
   resetActiveDay();
