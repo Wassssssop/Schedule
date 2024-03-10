@@ -7,162 +7,90 @@ const scheduleData = {
       "title": "",
       "teacher": "",
       "location": "",
-      "additionalInfo": "",
-      "alternative": false
+      "additionalInfo": ""
     },
     {
       "time": "14:40",
-      "week": "all",
-      "course": "lection",
-      "title": "Новітня Історія України",
-      "teacher": "Вербовий О.Ф.",
-      "location": "Онлайн",
-      "additionalInfo": "https://meet.google.com/yao-yrwr-heg",
-      "alternative": false
-    },
-    {
-      "time": "16:20",
-      "week": "all",
-      "course": "lection",
-      "title": "Історія політики країн Заходу щодо України",
-      "teacher": "Машевський О.П.",
-      "location": "Онлайн",
-      "additionalInfo": "https://knu-ua.zoom.us/j/88035974768?pwd=NWxnZll2YkxiWkowaTZ3Y0lqVTZhdz09",
-      "alternative": false
-    },
-    {
-      "time": "17:55",
-      "week": "all",
-      "course": "lection",
-      "title": "Історія раннього Нового часу",
-      "teacher": "Пількевич А. Л.",
-      "location": "Онлайн",
-      "additionalInfo": "https://us02web.zoom.us/j/71399386454?pwd=RitDZGxhUVpWcHFpRkVUMU9ER0J3QT09",
-      "alternative": false
-    },
-    // Америка
-    {
-      "time": "13:05",
       "week": "all",
       "course": "",
       "title": "",
       "teacher": "",
       "location": "",
-      "additionalInfo": "",
-      "alternative": true
-    },
-    {
-      "time": "14:40",
-      "week": "all",
-      "course": "lection",
-      "title": "Новітня Історія України",
-      "teacher": "Вербовий О.Ф.",
-      "location": "Онлайн",
-      "additionalInfo": "https://meet.google.com/yao-yrwr-heg",
-      "alternative": true
+      "additionalInfo": ""
     },
     {
       "time": "16:20",
       "week": "all",
-      "course": "lection",
-      "title": "Історичні витоки політичної культури американського суспільства",
-      "teacher": "Корнієнко А.Ю.",
-      "location": "Онлайн",
-      "additionalInfo": "https://us06web.zoom.us/j/87293187730?pwd=ZRmcbu2gX4CrXGJU4SnEHYQHuQknax.1Meeting ID: 872 9318 7730Passcode: 076338",
-      "alternative": true
+      "course": "",
+      "title": "",
+      "teacher": "",
+      "location": "",
+      "additionalInfo": ""
     },
     {
       "time": "17:55",
       "week": "all",
-      "course": "lection",
-      "title": "Історія раннього Нового часу",
-      "teacher": "Пількевич А. Л.",
-      "location": "Онлайн",
-      "additionalInfo": "https://us02web.zoom.us/j/71399386454?pwd=RitDZGxhUVpWcHFpRkVUMU9ER0J3QT09",
-      "alternative": true
-    }
+      "course": "",
+      "title": "",
+      "teacher": "",
+      "location": "",
+      "additionalInfo": ""
+    },
   ],
   "tuesday": [
     {
       "time": "13:05",
-      "week": "all", 
+      "week": "all",
       "course": "",
       "title": "",
       "teacher": "",
       "location": "",
-      "additionalInfo": "",
-      "alternative": false
+      "additionalInfo": ""
     },
     {
       "time": "14:40",
       "week": "all",
-      "course": "language",
-      "title": "Англійська / Французька / Німецька / Іспанська",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "153 / 456 / Онлайн / 452 ауд.",
-      "additionalInfo": "",
-      "alternative": false
+      "course": "Лекція",
+      "title": "Міжкультурна комунікація та етикет міжнародної ввічливості в практиці діаспори",
+      "teacher": "Набока С.В.",
+      "location": "435 аудиторія",
+      "additionalInfo": ""
     },
     {
       "time": "16:20",
-      "week": "all",
-      "course": "seminar",
-      "title": "Історія раннього Нового часу",
-      "teacher": "Грегуль А. Ю",
-      "location": "453 аудиторія",
-      "additionalInfo": "",
-      "alternative": false
-    },
-    {
-      "time": "17:55",
-      "week": "all",
-      "course": "seminar",
-      "title": "Історія Східної Європи та Росії",
-      "teacher": "Гуменний С. Л.",
-      "location": "438 аудиторія",
-      "additionalInfo": "",
-      "alternative": false
-    },
-    // Америка
-    {
-      "time": "13:05",
-      "week": "all", 
-      "course": "",
-      "title": "",
-      "teacher": "",
-      "location": "",
-      "additionalInfo": "",
-      "alternative": false
-    },
-    {
-      "time": "14:40",
-      "week": "all",
-      "course": "language",
-      "title": "Англійська / Французька / Німецька / Іспанська",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "153 / 456 / Онлайн / 452 ауд.",
-      "additionalInfo": "",
-      "alternative": true
+      "week": "upper",
+      "course": "Лекція",
+      "title": "Новітня історія України",
+      "teacher": "Вербовий О.В.",
+      "location": "435 аудиторія",
+      "additionalInfo": ""
     },
     {
       "time": "16:20",
-      "week": "all",
-      "course": "seminar",
-      "title": "Історія раннього Нового часу",
-      "teacher": "Грегуль А. Ю",
-      "location": "453 аудиторія",
-      "additionalInfo": "",
-      "alternative": true
+      "week": "lower",
+      "course": "Семінар",
+      "title": "Новітня історія України",
+      "teacher": "Шкабко С. І.",
+      "location": "435 аудиторія",
+      "additionalInfo": ""
     },
     {
       "time": "17:55",
-      "week": "all",
-      "course": "seminar",
-      "title": "Історія Східної Європи та Росії",
-      "teacher": "Гуменний С. Л.",
-      "location": "438 аудиторія",
-      "additionalInfo": "",
-      "alternative": true
+      "week": "upper",
+      "course": "Семінар",
+      "title": "Міжкультурна комунікація та етикет міжнародної ввічливості в практиці діаспори",
+      "teacher": "Набока С.В.",
+      "location": "435 аудиторія",
+      "additionalInfo": ""
+    },    
+    {
+      "time": "17:55",
+      "week": "lower",
+      "course": "Семінар",
+      "title": "Нова історія  країн Західної Європи та Північної Америки (з 15.02 по 21.05)",
+      "teacher": "Кошелєв А.О.",
+      "location": "435 аудиторія",
+      "additionalInfo": ""
     },
   ],
   "wednesday": [
@@ -173,174 +101,109 @@ const scheduleData = {
       "title": "",
       "teacher": "",
       "location": "",
-      "additionalInfo": "",
-      "alternative": false
+      "additionalInfo": ""
     },
     {
       "time": "14:40",
       "week": "all",
-      "course": "lection",
-      "title": "Історія Східної Європи та Росії",
-      "teacher": "Мордвінцев В. М.",
-      "location": "Онлайн; 10:00",
-      "additionalInfo": "https://zoom.us/j/5169999552?pwd=UENVOXlJYm9hcWRQTDFnd3ZMemgzdz09",
-      "alternative": false
+      "course": "Мова",
+      "title": "Англійська мова за професійним спрямуванням",
+      "teacher": "Цепко Т.А.",
+      "location": "435 аудиторія",
+      "additionalInfo": "https://zoom.us/j/5169999552?pwd=UENVOXlJYm9hcWRQTDFnd3ZMemgzdz09"
     },
     {
       "time": "16:20",
       "week": "all",
-      "course": "seminar",
-      "title": "Історія політичного устрою країн Західної Європи ",
-      "teacher": "Іванов О. Ф.",
-      "location": "451 аудиторія",
-      "additionalInfo": "",
-      "alternative": false
+      "course": "Мова",
+      "title": "Англійська мова за професійним спрямуванням",
+      "teacher": "Цепко Т.А.",
+      "location": "159 аудиторія",
+      "additionalInfo": ""
     },
     {
       "time": "17:55",
-      "week": "all",
-      "course": "language",
-      "title": "Англійська / Французька / Німецька / Іспанська",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "153 / 456 / Онлайн / 452 ауд.",
-      "additionalInfo": "",
-      "alternative": false
-    },
-    // Америка
-    {
-      "time": "13:05",
-      "week": "all",
-      "course": "",
-      "title": "",
-      "teacher": "",
-      "location": "",
-      "additionalInfo": "",
-      "alternative": true
-    },
-    {
-      "time": "14:40",
-      "week": "all",
-      "course": "lection",
-      "title": "Історія Східної Європи та Росії",
-      "teacher": "Мордвінцев В. М.",
-      "location": "Онлайн; 10:00",
-      "additionalInfo": "https://zoom.us/j/5169999552?pwd=UENVOXlJYm9hcWRQTDFnd3ZMemgzdz09",
-      "alternative": true
-    },
-    {
-      "time": "16:20",
-      "week": "all",
-      "course": "seminar",
-      "title": "Історія Канади",
+      "week": "upper",
+      "course": "Лекція",
+      "title": "Нова історія країн Азії та Африки",
       "teacher": "Сухобокова О.О.",
-      "location": "448 аудиторія",
-      "additionalInfo": "",
-      "alternative": true
+      "location": "450 аудиторія",
+      "additionalInfo": ""
     },
     {
       "time": "17:55",
-      "week": "all",
-      "course": "language",
-      "title": "Англійська / Французька / Німецька / Іспанська",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "153 / 456 / Онлайн / 452 ауд.",
-      "additionalInfo": "",
-      "alternative": true
+      "week": "lower",
+      "course": "Семінар",
+      "title": "Нова історія країн Азії та Африки",
+      "teacher": "Сухобокова О.О.",
+      "location": "450 аудиторія.",
+      "additionalInfo": ""
     },
   ],
   "thursday": [
     {
       "time": "13:05",
-      "week": "lower",
-      "course": "lection",
-      "title": "Історія політичного устрою країн Західної Європи ",
-      "teacher": "Іванов О. Ф.",
-      "location": "451 аудиторія",
-      "additionalInfo": "",
-      "alternative": false
-    },
-    {
-      "time": "13:05",
-      "week": "upper",
+      "week": "all",
       "course": "",
       "title": "",
       "teacher": "",
       "location": "",
-      "additionalInfo": "",
-      "alternative": false
-    },
+      "additionalInfo": ""
+    },    
     {
       "time": "14:40",
       "week": "upper",
-      "course": "seminar",
-      "title": "Історія політики країн Заходу щодо України",
-      "teacher": "Машевський О.П.",
-      "location": "460 аудиторія",
-      "additionalInfo": "",
-      "alternative": false
+      "course": "Лекція",
+      "title": "Українська діаспора та збереження української традиційної спадщини",
+      "teacher": "вакансія",
+      "location": "150 аудиторія",
+      "additionalInfo": ""
     },
     {
-      "time": "16:20",
-      "week": "upper",
-      "course": "seminar",
-      "title": "Новітня історія України",
-      "teacher": "Шкабко С. І.",
-      "location": "452 аудиторія",
-      "additionalInfo": "",
-      "alternative": false
-    },
-    {
-      "time": "17:55",
-      "week": "all",
-      "course": "language",
-      "title": "Англійська / Французька / Німецька / Іспанська",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "153 / 456 / Онлайн / 452 ауд.",
-      "additionalInfo": "",
-      "alternative": false
-    },
-     // Америка
-    {
-      "time": "13:05",
+      "time": "14:40",
       "week": "lower",
-      "course": "lection",
-      "title": "Історія Канади",
-      "teacher": "Сухобокова О.О.",
-      "location": "448 аудиторія",
-      "additionalInfo": "",
-      "alternative": true
-    },
-    {
-      "time": "14:40",
-      "week": "upper",
-      "course": "seminar",
-      "title": "Історичні витоки політичної культури американського суспільства",
-      "teacher": "Корнієнко А.Ю.",
-      "location": "448 аудиторія",
-      "additionalInfo": "",
-      "alternative": true
+      "course": "Семінар",
+      "title": "Українська діаспора та збереження української традиційної спадщини",
+      "teacher": "вакансія",
+      "location": "150 аудиторія",
+      "additionalInfo": ""
     },
     {
       "time": "16:20",
       "week": "upper",
-      "course": "seminar",
-      "title": "Новітня історія України",
-      "teacher": "Шкабко С. І.",
-      "location": "452 аудиторія",
-      "additionalInfo": "",
-      "alternative": true
+      "course": "Лекція",
+      "title": " Україна в контексті світової історії",
+      "teacher": "Орлова Т.В.",
+      "location": "425 аудиторія",
+      "additionalInfo": ""
+    },
+    {
+      "time": "16:20",
+      "week": "lower",
+      "course": "Семінар",
+      "title": " Україна в контексті світової історії",
+      "teacher": "Орлова Т.В.",
+      "location": "425 аудиторія",
+      "additionalInfo": ""
     },
     {
       "time": "17:55",
-      "week": "all",
-      "course": "language",
-      "title": "Англійська / Французька / Німецька / Іспанська",
-      "teacher": "Шевченко О.Ф / Рижова І.А. / Симканич О.В. / Невинна Ю.П.",
-      "location": "153 / 456 / Онлайн / 452 ауд.",
-      "additionalInfo": "",
-      "alternative": true
+      "week": "upper",
+      "course": "Лекція",
+      "title": "Нова історія  країн Західної Європи та Північної Америки",
+      "teacher": "Машевський О.П.",
+      "location": "150 аудиторія",
+      "additionalInfo": ""
     },
-
+    {
+      "time": "17:55",
+      "week": "lower",
+      "course": "Семінар",
+      "title": "Нова історія  країн Західної Європи та Північної Америки",
+      "teacher": "Кошелєв А.О.",
+      "location": "150 аудиторія",
+      "additionalInfo": ""
+    },
   ],
   "friday": [
     {
@@ -350,44 +213,19 @@ const scheduleData = {
       "title": "",
       "teacher": "",
       "location": "",
-      "additionalInfo": "",
-      "alternative": false
+      "additionalInfo": ""
     },
     {
       "time": "14:40",
       "week": "all",
-      "course": "lection",
+      "course": "Лекція",
       "title": "Дисципліна вільного вибору",
       "teacher": "",
       "location": "Онлайн",
-      "additionalInfo": "https://telegra.ph/Discipl%D1%96na-v%D1%96lnogo-viboru-studenta-03-08",
-      "alternative": false
+      "additionalInfo": "https://telegra.ph/Discipl%D1%96na-v%D1%96lnogo-viboru-studenta-03-08"
     },
-    //
-    {
-      "time": "13:05",
-      "week": "all",
-      "course": "",
-      "title": "",
-      "teacher": "",
-      "location": "",
-      "additionalInfo": "",
-      "alternative": true
-    },
-    {
-      "time": "14:40",
-      "week": "all",
-      "course": "lection",
-      "title": "Дисципліна вільного вибору",
-      "teacher": "",
-      "location": "Онлайн",
-      "additionalInfo": "https://telegra.ph/Discipl%D1%96na-v%D1%96lnogo-viboru-studenta-03-08",
-      "alternative": true
-    },
-
   ],
-
-  };
+};
 
 const parameterIcons = {
   "teacher": "<i class='fas fa-user-tie'></i>&nbsp;",
