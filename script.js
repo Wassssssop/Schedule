@@ -50,7 +50,7 @@ const scheduleData = {
     {
       "time": "14:40",
       "week": "all",
-      "course": "Лекція",
+      "course": "lection",
       "title": "Міжкультурна комунікація та етикет міжнародної ввічливості в практиці діаспори",
       "teacher": "Набока С.В.",
       "location": "435 аудиторія",
@@ -59,7 +59,7 @@ const scheduleData = {
     {
       "time": "16:20",
       "week": "upper",
-      "course": "Лекція",
+      "course": "lection",
       "title": "Новітня історія України",
       "teacher": "Вербовий О.В.",
       "location": "435 аудиторія",
@@ -68,7 +68,7 @@ const scheduleData = {
     {
       "time": "16:20",
       "week": "lower",
-      "course": "Семінар",
+      "course": "seminar",
       "title": "Новітня історія України",
       "teacher": "Шкабко С. І.",
       "location": "435 аудиторія",
@@ -77,7 +77,7 @@ const scheduleData = {
     {
       "time": "17:55",
       "week": "upper",
-      "course": "Семінар",
+      "course": "seminar",
       "title": "Міжкультурна комунікація та етикет міжнародної ввічливості в практиці діаспори",
       "teacher": "Набока С.В.",
       "location": "435 аудиторія",
@@ -86,7 +86,7 @@ const scheduleData = {
     {
       "time": "17:55",
       "week": "lower",
-      "course": "Семінар",
+      "course": "seminar",
       "title": "Нова історія  країн Західної Європи та Північної Америки (з 15.02 по 21.05)",
       "teacher": "Кошелєв А.О.",
       "location": "435 аудиторія",
@@ -106,8 +106,8 @@ const scheduleData = {
     {
       "time": "14:40",
       "week": "all",
-      "course": "Мова",
-      "title": "Англійська мова за професійним спрямуванням",
+      "course": "language",
+      "title": "Англійська language за професійним спрямуванням",
       "teacher": "Цепко Т.А.",
       "location": "435 аудиторія",
       "additionalInfo": "https://zoom.us/j/5169999552?pwd=UENVOXlJYm9hcWRQTDFnd3ZMemgzdz09"
@@ -115,8 +115,8 @@ const scheduleData = {
     {
       "time": "16:20",
       "week": "all",
-      "course": "Мова",
-      "title": "Англійська мова за професійним спрямуванням",
+      "course": "language",
+      "title": "Англійська language за професійним спрямуванням",
       "teacher": "Цепко Т.А.",
       "location": "159 аудиторія",
       "additionalInfo": ""
@@ -124,7 +124,7 @@ const scheduleData = {
     {
       "time": "17:55",
       "week": "upper",
-      "course": "Лекція",
+      "course": "lection",
       "title": "Нова історія країн Азії та Африки",
       "teacher": "Сухобокова О.О.",
       "location": "450 аудиторія",
@@ -133,7 +133,7 @@ const scheduleData = {
     {
       "time": "17:55",
       "week": "lower",
-      "course": "Семінар",
+      "course": "seminar",
       "title": "Нова історія країн Азії та Африки",
       "teacher": "Сухобокова О.О.",
       "location": "450 аудиторія.",
@@ -153,7 +153,7 @@ const scheduleData = {
     {
       "time": "14:40",
       "week": "upper",
-      "course": "Лекція",
+      "course": "lection",
       "title": "Українська діаспора та збереження української традиційної спадщини",
       "teacher": "вакансія",
       "location": "150 аудиторія",
@@ -162,7 +162,7 @@ const scheduleData = {
     {
       "time": "14:40",
       "week": "lower",
-      "course": "Семінар",
+      "course": "seminar",
       "title": "Українська діаспора та збереження української традиційної спадщини",
       "teacher": "вакансія",
       "location": "150 аудиторія",
@@ -171,7 +171,7 @@ const scheduleData = {
     {
       "time": "16:20",
       "week": "upper",
-      "course": "Лекція",
+      "course": "lection",
       "title": " Україна в контексті світової історії",
       "teacher": "Орлова Т.В.",
       "location": "425 аудиторія",
@@ -180,7 +180,7 @@ const scheduleData = {
     {
       "time": "16:20",
       "week": "lower",
-      "course": "Семінар",
+      "course": "seminar",
       "title": " Україна в контексті світової історії",
       "teacher": "Орлова Т.В.",
       "location": "425 аудиторія",
@@ -189,7 +189,7 @@ const scheduleData = {
     {
       "time": "17:55",
       "week": "upper",
-      "course": "Лекція",
+      "course": "lection",
       "title": "Нова історія  країн Західної Європи та Північної Америки",
       "teacher": "Машевський О.П.",
       "location": "150 аудиторія",
@@ -198,7 +198,7 @@ const scheduleData = {
     {
       "time": "17:55",
       "week": "lower",
-      "course": "Семінар",
+      "course": "seminar",
       "title": "Нова історія  країн Західної Європи та Північної Америки",
       "teacher": "Кошелєв А.О.",
       "location": "150 аудиторія",
@@ -218,7 +218,7 @@ const scheduleData = {
     {
       "time": "14:40",
       "week": "all",
-      "course": "Лекція",
+      "course": "lection",
       "title": "Дисципліна вільного вибору",
       "teacher": "",
       "location": "Онлайн",
