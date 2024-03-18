@@ -110,7 +110,7 @@ const scheduleData = {
       "title": "Англійська language за професійним спрямуванням",
       "teacher": "Цепко Т.А.",
       "location": "435 аудиторія",
-      "additionalInfo": "https://zoom.us/j/5169999552?pwd=UENVOXlJYm9hcWRQTDFnd3ZMemgzdz09"
+      "additionalInfo": ""
     },
     {
       "time": "16:20",
