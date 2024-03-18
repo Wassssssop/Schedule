@@ -277,16 +277,19 @@ function displaySchedule(day) {
                     classElement.appendChild(title);
 
                     Object.keys(parameterIcons).forEach(parameter => {
-                        if (timeSlotData[parameter]) {
-                            const icon = document.createElement('span');
-                            icon.innerHTML = parameterIcons[parameter];
-                            const parameterValue = document.createElement('span');
-                            parameterValue.textContent = timeSlotData[parameter];
-                            const parameterElement = document.createElement('p');
-                            parameterElement.appendChild(icon);
-                            parameterElement.appendChild(parameterValue);
-                            classElement.appendChild(parameterElement);
-                        }
+                      if (timeSlotData[parameter]) {
+                          const icon = document.createElement('span');
+                          icon.innerHTML = parameterIcons[parameter];
+                          const parameterValue = document.createElement('span');
+                          parameterValue.textContent = timeSlotData[parameter];
+                          const parameterElement = document.createElement('p');
+                          parameterElement.appendChild(icon);
+                          parameterElement.appendChild(parameterValue);
+                          if (parameter === 'location' || parameter === 'additionalInfo') {
+                              parameterElement.style.marginBottom = '20px';
+                          }
+                          classElement.appendChild(parameterElement);
+                      }
                     });
 
                     if (timeSlotData.additionalInfo && timeSlotData.additionalInfo.includes('https')) {
@@ -295,6 +298,7 @@ function displaySchedule(day) {
                         additionalInfo.classList.add('additional-info-button');
                         additionalInfo.addEventListener('click', () => openInDefaultBrowser(timeSlotData.additionalInfo));
                         classElement.appendChild(additionalInfo);
+                        title.style.marginBottom = '10px';
                     }
                     scheduleContent.forEach((content, index) => {
                         if (lessonTimes[index] === timeSlotData.time) {
@@ -332,24 +336,6 @@ document.getElementById('lower-week').addEventListener('click', () => {
   document.getElementById('upper-week').classList.remove('active');
 });
 
-document.getElementById('normal-mode').addEventListener('click', () => {
-  if (isAlternativeMode) {
-    isAlternativeMode = false;
-    displaySchedule(currentDay);
-    document.getElementById('normal-mode').classList.add('active');
-    document.getElementById('alternative-mode').classList.remove('active');
-  }
-});
-
-document.getElementById('alternative-mode').addEventListener('click', () => {
-  if (!isAlternativeMode) {
-    isAlternativeMode = true;
-    displaySchedule(currentDay);
-    document.getElementById('alternative-mode').classList.add('active');
-    document.getElementById('normal-mode').classList.remove('active');
-  }
-});
-
 const resetActiveDay = () => {
   days.forEach(d => d.classList.remove('active'));
 };
@@ -379,11 +365,11 @@ lowerWeekButton.addEventListener('click', () => {
 
 window.addEventListener('DOMContentLoaded', (event) => {
     const links = document.querySelectorAll('a');
-    
+
     links.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            
+
             if (navigator.userAgent.includes('iPhone') || navigator.userAgent.includes('Android')) {
                 window.open(link.href, '_system');
             } else {
