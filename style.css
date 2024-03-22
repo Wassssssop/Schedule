@@ -299,6 +299,34 @@ body {
   color: #fff;
 }
 
+.mode-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.mode-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mode-buttons button.active {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.mode-buttons button:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
 .controls button {
   padding: 10px 25px;
   border: none;
@@ -393,12 +421,36 @@ body {
     margin-bottom: 10px;
   }
 
+  .mode-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .mode-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+  }
+  .mode-buttons button:last-child {
+    margin-bottom: 0;
+  }
+
   .controls > div {
     flex: 1;
     margin-right: 10px;
   }
 
-  .controls button {
+  .controls button,
+  .mode-buttons button {
     padding: 10px 20px;
     flex: 1;
     margin-right: 0;
@@ -416,13 +468,17 @@ body {
 }
 
 #upper-week:not(.active),
-#lower-week:not(.active) {
+#lower-week:not(.active),
+#normal-mode:not(.active),
+#alternative-mode:not(.active) {
   background-color: #f0f4f8;
   color: #000000;
 }
 
 #upper-week:not(.active):hover,
-#lower-week:not(.active):hover {
+#lower-week:not(.active):hover,
+#normal-mode:not(.active):hover,
+#alternative-mode:not(.active):hover {
   background-color: #d9d9d9;
   color: #000000;
 }
@@ -445,7 +501,7 @@ body {
   .schedule {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: hidden;
+    overflow-x: auto;
   }
 
   .schedule .class {
@@ -459,6 +515,12 @@ body {
 
   .controls {
     justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mode-buttons button#alternative-mode {
+    padding: 8px;
   }
 }
 
@@ -634,16 +696,31 @@ input:checked + .slider:before {
  color: #222;
 }
 
+.night .mode-buttons button.active {
+ background-color: #3f9742;
+ color: #222;
+}
+
 .night #upper-week:not(.active),
-.night #lower-week:not(.active) {
+.night #lower-week:not(.active),
+.night #normal-mode:not(.active),
+.night #alternative-mode:not(.active) {
   background-color: #222;
   color: #ffffff;
 }
 
 .night #upper-week:not(.active):hover,
-.night #lower-week:not(.active):hover {
+.night #lower-week:not(.active):hover,
+.night #normal-mode:not(.active):hover,
+.night #alternative-mode:not(.active):hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+
+.night .mode-buttons button:hover {
+ background-color: #4cbd50;
+ color: #222;
 }
 
 .night .controls button {
