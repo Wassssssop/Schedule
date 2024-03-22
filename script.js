@@ -87,7 +87,7 @@ const scheduleData = {
       "time": "17:55",
       "week": "lower",
       "course": "seminar",
-      "title": "Нова історія  країн Західної Європи та Північної Америки (з 15.02 по 21.05)",
+      "title": "Нова історія країн Західної Європи та Північної Америки (з 15.02 по 21.05)",
       "teacher": "Кошелєв А.О.",
       "location": "435 аудиторія",
       "additionalInfo": ""
@@ -107,7 +107,7 @@ const scheduleData = {
       "time": "14:40",
       "week": "all",
       "course": "language",
-      "title": "Англійська language за професійним спрямуванням",
+      "title": "Англійська мова за професійним спрямуванням",
       "teacher": "Цепко Т.А.",
       "location": "435 аудиторія",
       "additionalInfo": ""
@@ -116,7 +116,7 @@ const scheduleData = {
       "time": "16:20",
       "week": "all",
       "course": "language",
-      "title": "Англійська language за професійним спрямуванням",
+      "title": "Англійська мова за професійним спрямуванням",
       "teacher": "Цепко Т.А.",
       "location": "159 аудиторія",
       "additionalInfo": ""
@@ -190,7 +190,7 @@ const scheduleData = {
       "time": "17:55",
       "week": "upper",
       "course": "lection",
-      "title": "Нова історія  країн Західної Європи та Північної Америки",
+      "title": "Нова історія країн Західної Європи та Північної Америки",
       "teacher": "Машевський О.П.",
       "location": "150 аудиторія",
       "additionalInfo": ""
@@ -199,7 +199,7 @@ const scheduleData = {
       "time": "17:55",
       "week": "lower",
       "course": "seminar",
-      "title": "Нова історія  країн Західної Європи та Північної Америки",
+      "title": "Нова історія країн Західної Європи та Північної Америки",
       "teacher": "Кошелєв А.О.",
       "location": "150 аудиторія",
       "additionalInfo": ""
