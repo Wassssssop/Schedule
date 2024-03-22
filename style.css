@@ -71,7 +71,7 @@ body {
 .days {
   display: flex;
   justify-content: space-between;
-  overflow-x: auto;
+  overflow-x: hidden;
   margin-bottom: 10px;
 }
 
@@ -87,6 +87,8 @@ body {
   transition: background-color 0.2s ease;
   font-size: 14px;
   font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .days button.active {
@@ -233,6 +235,7 @@ body {
 .schedule .class strong[data-course="language"] {
   background-color: #f39c12;
 }
+
 
 .schedule .class p,
 .schedule .class strong {
@@ -493,28 +496,11 @@ body {
 }
 
 @media (min-width: 769px) {
-  .schedule .class strong,
-  .schedule .class p {
-    white-space: nowrap;
-  }
-
-  .schedule {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  }
-
-  .schedule .class {
-    flex-basis: calc(50% - 20px);
-    margin-right: 20px;
-  }
-
-  .schedule .class:nth-child(odd) {
-    margin-right: 0;
-  }
-
-  .controls {
-    justify-content: flex-start;
+  .schedule-content .class p {
+    line-height: 1.2;
+    overflow: hidden; /* Prevent text scrolling */
+    white-space: pre-wrap; /* Allow text to wrap */
+    max-width: 50ch; /* Limit text to 50 characters */
   }
 }
 
