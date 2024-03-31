@@ -213,7 +213,8 @@ const scheduleData = {
       "title": "",
       "teacher": "",
       "location": "",
-      "additionalInfo": ""
+      "additionalInfo": "",
+      "alternative": false
     },
     {
       "time": "14:40",
@@ -222,7 +223,29 @@ const scheduleData = {
       "title": "Дисципліна вільного вибору",
       "teacher": "",
       "location": "Онлайн",
-      "additionalInfo": "https://telegra.ph/Discipl%D1%96na-v%D1%96lnogo-viboru-studenta-03-08"
+      "additionalInfo": "https://telegra.ph/Discipl%D1%96na-v%D1%96lnogo-viboru-studenta-03-08",
+      "alternative": false
+    },
+    //
+    {
+      "time": "13:05",
+      "week": "all",
+      "course": "",
+      "title": "",
+      "teacher": "",
+      "location": "",
+      "additionalInfo": "",
+      "alternative": true
+    },
+    {
+      "time": "14:40",
+      "week": "all",
+      "course": "lection",
+      "title": "Дисципліна вільного вибору",
+      "teacher": "",
+      "location": "Онлайн",
+      "additionalInfo": "https://telegra.ph/Discipl%D1%96na-v%D1%96lnogo-viboru-studenta-03-08",
+      "alternative": true
     },
   ],
   "saturday": [
@@ -255,6 +278,7 @@ const scheduleContent = document.querySelectorAll('.schedule-content');
 const today = new Date().getDay();
 let currentDay = '';
 let currentWeek = 'upper';
+let isAlternativeMode = false;
 const lessonTimes = ["13:05", "14:40", "16:20", "17:55"];
 const switchBtn = document.getElementById('switch');
 const nightElements = document.querySelectorAll('.container, body');
@@ -288,7 +312,7 @@ function displaySchedule(day) {
     const dayData = scheduleData[day];
     if (dayData) {
         dayData.forEach(timeSlotData => {
-            if ((day !== 'sunday' && day !== 'saturday')) {
+            if ((day !== 'sunday' && day !== 'saturday') && ((timeSlotData.week === 'all' || timeSlotData.week === currentWeek) && ((!isAlternativeMode && !timeSlotData.alternative) || (isAlternativeMode && timeSlotData.alternative)))) {
                 if (timeSlotData.course) {
                     const classElement = document.createElement('div');
                     classElement.classList.add('class');
@@ -385,6 +409,24 @@ document.getElementById('lower-week').addEventListener('click', () => {
     displaySchedule(currentDay);
     document.getElementById('lower-week').classList.add('active');
     document.getElementById('upper-week').classList.remove('active');
+});
+
+document.getElementById('normal-mode').addEventListener('click', () => {
+    if (isAlternativeMode) {
+        isAlternativeMode = false;
+        displaySchedule(currentDay);
+        document.getElementById('normal-mode').classList.add('active');
+        document.getElementById('alternative-mode').classList.remove('active');
+    }
+});
+
+document.getElementById('alternative-mode').addEventListener('click', () => {
+    if (!isAlternativeMode) {
+        isAlternativeMode = true;
+        displaySchedule(currentDay);
+        document.getElementById('alternative-mode').classList.add('active');
+        document.getElementById('normal-mode').classList.remove('active');
+    }
 });
 
 const resetActiveDay = () => {
