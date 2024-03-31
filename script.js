@@ -225,7 +225,13 @@ const scheduleData = {
       "additionalInfo": "https://telegra.ph/Discipl%D1%96na-v%D1%96lnogo-viboru-studenta-03-08"
     },
   ],
-};
+  "saturday": [
+    {},
+    ],
+  "sunday": [
+    {}
+    ]
+  };
 
 const parameterIcons = {
   "teacher": "<i class='fas fa-user-tie'></i>&nbsp;",
