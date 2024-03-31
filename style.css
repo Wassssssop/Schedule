@@ -525,10 +525,12 @@ body {
 }
 
 @media (min-width: 769px) {
-  .schedule .class strong,
-  .schedule .class p {
-    white-space: nowrap;
-  }
+.schedule-content .class p {
+  line-height: 1.2;
+  overflow: hidden;
+  white-space: pre-wrap;
+  max-width: 50ch;
+}
 
   .container {
     display: flex;
