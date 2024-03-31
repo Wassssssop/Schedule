@@ -525,15 +525,11 @@ body {
 }
 
 @media (min-width: 769px) {
-  .schedule .class strong,
-  .schedule .class p {
-    white-space: nowrap;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .schedule-content .class p {
+    line-height: 1.2;
+    overflow: hidden;
+    white-space: pre-wrap;
+    max-width: 50ch;
   }
 
   .schedule {
@@ -541,6 +537,9 @@ body {
     flex-wrap: nowrap;
     overflow-x: auto;
   }
+
+  .controls {
+    justify-content: flex-start;
 
   .time-bar {
     margin-left: 15px;
